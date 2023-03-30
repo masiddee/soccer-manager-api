@@ -1,0 +1,15 @@
+{
+  "name": "soccer-manager-api",
+  "version": "1.0.0",
+  "description": "GraphQL API for NextJS Soccer Manager web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mansoor Siddeeq",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^16.6.0",
+    "urql": "^3.0.4"
+  }
+}
