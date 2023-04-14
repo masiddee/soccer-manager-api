@@ -1,5 +1,5 @@
 'use strict'
-import data from '../data/users.json' assert { type: 'json' };
+// import data from '../data/users.json' assert { type: 'json' };
 import { baseUserDetails } from '../utils/helpers.js';
 
 export const userTypeDefs = `#graphql
@@ -80,9 +80,9 @@ export const userTypeDefs = `#graphql
 export const userResolvers = {
   Query: {
     getUser: async (parent, { userId }, context, info) => {
-      const user = data.find(_ => _.id === userId);
+      // const user = data.find(_ => _.id === userId);
 
-      return user;
+      return `user: ${userId}`;
     } 
   },
   Mutation: {}
