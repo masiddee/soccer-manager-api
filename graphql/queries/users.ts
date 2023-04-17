@@ -5,6 +5,7 @@ import { baseUserDetails } from '../utils/helpers.js';
 export const userTypeDefs = `#graphql
   type Query {
     getUser(userId: ID!): UserDetails!
+    hello(): String!
   }
 
   type Mutation {
@@ -83,7 +84,8 @@ export const userResolvers = {
       // const user = data.find(_ => _.id === userId);
 
       return `user: ${userId}`;
-    } 
+    },
+    hello: () => 'Hello World'
   },
   Mutation: {}
 }
